@@ -13,4 +13,5 @@ def solution(list_1, list_2):
     list_2 = sorted(list_2)
     return sum([abs(one - two) for one, two in zip(list_1, list_2)])
 
-print(solution(*read_input('inp/day_one.txt')))
+if __name__ == '__main__':
+    print(solution(*read_input('inp/day_one.txt')))
