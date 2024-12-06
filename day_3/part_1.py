@@ -17,5 +17,5 @@ def solution(s: str):
 
 
 if __name__ == "__main__":
-    print(solution(read_input("inp/day_three.txt")))
+    print(solution(read_input("inp/day_3.txt")))
     # print(solution("xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))"))

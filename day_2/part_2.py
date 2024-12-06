@@ -16,7 +16,7 @@ def solution(reports: list[list[int]]):
 
 
 if __name__ == "__main__":
-    print(solution(read_input("inp/day_two.txt")))
+    print(solution(read_input("inp/day_2.txt")))
     # print(solution([
     #     [7, 6, 4, 2, 1],
     #     [1, 2, 7, 8, 9],
