@@ -5,7 +5,7 @@ def _is_valid(report: list[int]):
     if is_valid(report):
         return True
     for i in range(len(report)):
-        modified_report: list[int] = report[:i] + report[i + 1 :]
+        modified_report = report[:i] + report[i + 1 :]
         if is_valid(modified_report):
             return True
     return False

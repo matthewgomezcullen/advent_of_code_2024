@@ -1,14 +1,16 @@
 import re
 
 
+MULTIPLIERS = r"mul\(\d{1,3},\d{1,3}\)"
+
+
 def read_input(file_path):
     with open(file_path, "r") as f:
         return "".join(f.readlines())
 
 
 def solution(s: str):
-    pattern = r"mul\(\d{1,3},\d{1,3}\)"
-    matches = re.findall(pattern, s)
+    matches = re.findall(MULTIPLIERS, s)
     return sum(
         [a * b for a, b in [map(int, match[4:-1].split(",")) for match in matches]]
     )
