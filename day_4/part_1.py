@@ -1,6 +1,3 @@
-import re
-
-
 def read_input(filename: str) -> list[str]:
     with open(filename, "r") as f:
         return f.readlines()
@@ -30,16 +27,6 @@ def solution(lines: list[str]) -> int:
         ):
             count += 1
         return count
-
-    # xmas_regex = (
-    #     r"XMAS|SAMX|"
-    #     r"X" + "." * (line_length) + "M" + "." * (line_length) + "A" + "." * (line_length) + "S|"
-    #     r"S" + "." * (line_length) + "A" + "." * (line_length) + "M" + "." * (line_length) + "X|"
-    #     r"X" + "." * (line_length + 1) + "M" + "." * (line_length + 1) + "A" + "." * (line_length + 1) + "S|"
-    #     r"S" + "." * (line_length + 1) + "A" + "." * (line_length + 1) + "M" + "." * (line_length + 1) + "X|"
-    #     r"X" + "." * (line_length - 1) + "M" + "." * (line_length - 1) + "A" + "." * (line_length - 1) + "S|"
-    #     r"S" + "." * (line_length - 1) + "A" + "." * (line_length - 1) + "M" + "." * (line_length - 1) + "X"
-    # )
     count = 0
     for row in range(len(lines)):
         for col in range(line_length):

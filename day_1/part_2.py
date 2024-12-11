@@ -11,3 +11,4 @@ def solution(list_1, list_2):
 if __name__ == "__main__":
     print(solution(*read_input("inp/day_1.txt")))
     # print(solution([3, 4, 2, 1, 3, 3], [4, 3, 5, 3, 9, 3]))
+    # answer: 31
