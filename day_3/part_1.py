@@ -4,8 +4,8 @@ import re
 MULTIPLIERS = r"mul\(\d{1,3},\d{1,3}\)"
 
 
-def read_input(file_path):
-    with open(file_path, "r") as f:
+def read_input(filename):
+    with open(filename, "r") as f:
         return "".join(f.readlines())
 
 
